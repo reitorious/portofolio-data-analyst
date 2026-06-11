@@ -93,7 +93,6 @@
 | Cancellation Rate | (Cancelled + Refunded) ÷ all orders |
 | Repeat Rate | Customers with ≥2 orders ÷ customers with ≥1 order |
 
-
 ### 5. Live Demo
 
-[Open dashboard project-03 data cleaning](https://data-cleaning-air.streamlit.app/)
+[Open dashboard project-02 sql](https://sql-food-delivery.streamlit.app/)

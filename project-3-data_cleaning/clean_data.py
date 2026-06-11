@@ -1,8 +1,11 @@
 # clean_data.py — part 1: inspection
 import pandas as pd
 import numpy as np
+from pathlib import Path
 
-df = pd.read_csv("AB_NYC_2019.csv")
+BASE_DIR = Path(__file__).parent    
+
+df = pd.read_csv(BASE_DIR / "AB_NYC_2019.csv")
 
 print("Data shape:", df.shape)              # (rows, columns)
 print("\n--- Data types & non-null ---")
@@ -78,5 +81,5 @@ print(f"Nulls  : {nulls_before} -> {nulls_after}")
 print(f"Duplicates dropped: {dupes_before}")
 
 # save to a NEW file (never overwrite the raw data!)
-df.to_csv("airbnb_clean.csv", index=False)
+df.to_csv(BASE_DIR / "airbnb_clean.csv", index=False)
 print("\nSaved to airbnb_clean.csv ✅")

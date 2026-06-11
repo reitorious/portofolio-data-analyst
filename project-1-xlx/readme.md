@@ -82,6 +82,7 @@ Orders (fact table)
 ### 6. Live Demo
 
 [Open dashboard project-01 xlx](https://xlx-sales.streamlit.app/)
+
 [Open Spreadsheet](https://docs.google.com/spreadsheets/d/1lPra0fYY51NEx0FTZW-rSlyAizqH7Njyb5sR5tq0_NE/)
 
 

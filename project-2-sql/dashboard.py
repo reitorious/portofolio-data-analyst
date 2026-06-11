@@ -3,6 +3,10 @@ import sqlite3
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+DB = BASE_DIR / "delivery.db" 
 
 st.set_page_config(page_title="Food Delivery SQL Dashboard", layout="wide")
 
@@ -16,8 +20,6 @@ footer {visibility: hidden;}
 </style>
 """
 st.markdown(hide_ui, unsafe_allow_html=True)
-
-DB = "delivery.db"
 
 # Run any SQL string against the database and return a DataFrame
 @st.cache_data

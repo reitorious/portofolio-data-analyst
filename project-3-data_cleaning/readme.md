@@ -41,3 +41,7 @@
 ### 5. Live Demo
 
 [Open dashboard project-03 data cleaning](https://data-cleaning-air.streamlit.app/)
+
+[Before data cleaning]([https://data-cleaning-air.streamlit.app/](https://drive.google.com/file/d/1nc2HxOu5QfLbzgWng5jvxMlz_LUTl8ny/view?usp=sharing))
+
+[After data cleaning]([https://data-cleaning-air.streamlit.app/](https://drive.google.com/file/d/1UqDDUOAkhe716cf4lePoVI0xfCAN5wGc/view?usp=drive_link))

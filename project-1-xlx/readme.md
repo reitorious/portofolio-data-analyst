@@ -79,8 +79,10 @@ Orders (fact table)
 > **Explanation:** The `Orders` table is the central fact table. Each order row links to one product via **Product ID** and to one sales rep via **Rep ID**. Tables are joined using XLOOKUP (Excel/Sheets) or `merge` (Python).
 
 
+### 6. Live Demo
 
-## Live Demo
+[Open dashboard project-01 xlx](https://xlx-sales.streamlit.app/)
+[Open Spreadsheet](https://docs.google.com/spreadsheets/d/1lPra0fYY51NEx0FTZW-rSlyAizqH7Njyb5sR5tq0_NE/)
 
-[Open dashboard project-02 sql](https://sql-food-delivery.streamlit.app/)
+
 

@@ -1,5 +1,9 @@
 import pandas as pd
 import numpy as np
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent    
+
 
 np.random.seed(42)  # keep random results consistent
 
@@ -46,12 +50,12 @@ for i in range(n):
 orders_df = pd.DataFrame(orders).sort_values("Order Date").reset_index(drop=True)
 
 # === Save all 3 tables into ONE Excel file (multiple sheets) + CSVs ===
-with pd.ExcelWriter("data/sales.xlsx") as writer:
+with pd.ExcelWriter(BASE_DIR / "data" / "sales.xlsx") as writer:
     products_df.to_excel(writer, sheet_name="Products", index=False)
     reps_df.to_excel(writer, sheet_name="Sales Reps", index=False)
     orders_df.to_excel(writer, sheet_name="Orders", index=False)
 
-products_df.to_csv("data/products.csv", index=False)
-reps_df.to_csv("data/sales_reps.csv", index=False)
-orders_df.to_csv("data/orders.csv", index=False)
+products_df.to_csv(BASE_DIR / "data" / "products.csv", index=False)
+reps_df.to_csv(BASE_DIR / "data" / "sales_reps.csv", index=False)
+orders_df.to_csv(BASE_DIR / "data" / "orders.csv", index=False)
 print("Created:", products_df.shape, reps_df.shape, orders_df.shape)

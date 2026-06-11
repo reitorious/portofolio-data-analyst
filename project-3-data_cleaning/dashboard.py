@@ -2,6 +2,9 @@
 import pandas as pd
 import streamlit as st
 import plotly.express as px
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent  
 
 st.set_page_config(page_title="NYC Airbnb Dashboard", layout="wide")
 
@@ -18,7 +21,7 @@ st.markdown(hide_ui, unsafe_allow_html=True)
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("airbnb_clean.csv", parse_dates=["last_review"])
+    return pd.read_csv(BASE_DIR / "airbnb_clean.csv", parse_dates=["last_review"])
 
 df = load_data()
 

@@ -151,14 +151,14 @@ best_resto = top_resto.iloc[0]
 best_cat = by_cat.iloc[0]
 best_channel = channel_val.iloc[0]
 
-st.markdown(f"""
-- **Revenue seasonality:** highest in {peak['month']} (${peak['revenue']:,.0f}), lowest in {low['month']} (${low['revenue']:,.0f}).
+st.markdown(rf"""
+- **Revenue seasonality:** highest in {peak['month']} (\${peak['revenue']:,.0f}), lowest in {low['month']} (\${low['revenue']:,.0f}).
   _Recommendation:_ schedule marketing pushes before peak months and retention offers during slow months.
-- **Restaurant concentration:** {best_resto['restaurant_name']} is the top earner (${best_resto['revenue']:,.0f}).
+- **Restaurant concentration:** {best_resto['restaurant_name']} is the top earner (\${best_resto['revenue']:,.0f}).
   _Recommendation:_ secure exclusive deals with top restaurants and coach mid-tier partners.
-- **Category demand:** {best_cat['category']} generates the most revenue (${best_cat['revenue']:,.0f}).
+- **Category demand:** {best_cat['category']} generates the most revenue (\${best_cat['revenue']:,.0f}).
   _Recommendation:_ feature {best_cat['category']} on the homepage and grow its restaurant supply.
-- **Best acquisition channel:** {best_channel['channel']} delivers the highest revenue per customer (${best_channel['revenue_per_customer']:,.2f}).
+- **Best acquisition channel:** {best_channel['channel']} delivers the highest revenue per customer (\${best_channel['revenue_per_customer']:,.2f}).
   _Recommendation:_ shift more budget toward {best_channel['channel']} and audit low-value channels.
 - **Operations:** average delivery time is {kpi['avg_delivery'][0]:.1f} min.
   _Recommendation:_ investigate cities or drivers above this benchmark to protect delivery ratings.

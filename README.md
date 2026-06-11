@@ -32,7 +32,7 @@ A collection of **3 end-to-end data analyst projects**, each in its own folder w
 
 **Purpose:** Analyze retail sales from 3 related tables to find the most profitable products & regions, sales-rep performance vs target, and yearly trends.
 
-![Sales dashboard demo](project-1-xlx/screenshots/demo.gif)
+![Sales dashboard demo](project-1-xlx/screenshots/xlx.gif)
 
 | File / Folder | Purpose |
 | --- | --- |
@@ -45,7 +45,7 @@ A collection of **3 end-to-end data analyst projects**, each in its own folder w
 
 **Purpose:** Demonstrate SQL skills on a food-delivery marketplace database with 6 relational tables, answering real business questions via JOINs, CTEs, and window functions.
 
-![SQL dashboard demo](project-2-sql/screenshots/demo.gif)
+![SQL dashboard demo](project-2-sql/screenshots/sql.gif)
 
 | File / Folder | Purpose |
 | --- | --- |
@@ -59,7 +59,7 @@ A collection of **3 end-to-end data analyst projects**, each in its own folder w
 
 **Purpose:** Take the real, messy NYC Airbnb Open Data (~48.9k rows) and turn it into a clean, analysis-ready dataset with a documented, reproducible pipeline.
 
-![Data cleaning dashboard demo](project-3-data_cleaning/screenshots/demo.gif)
+![Data cleaning dashboard demo](project-3-data_cleaning/screenshots/data_cleaning.gif)
 
 | File / Folder | Purpose |
 | --- | --- |

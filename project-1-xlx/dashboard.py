@@ -1,6 +1,9 @@
+import streamlit as st
 import pandas as pd
 import plotly.express as px
-import streamlit as st
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent    
 
 st.set_page_config(page_title="Sales Performance Dashboard", layout="wide")
 

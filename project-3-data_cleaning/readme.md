@@ -37,3 +37,7 @@
 | Total missing values | 20,141 | 10,051 |
 | Duplicate rows | 0 | 0 |
 | Price = 0 | 11 | 0 |
+
+### 5. Live Demo
+
+[Open dashboard project-03 data cleaning](https://data-cleaning-air.streamlit.app/)

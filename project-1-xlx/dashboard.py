@@ -17,9 +17,9 @@ st.markdown(hide_ui, unsafe_allow_html=True)
 
 @st.cache_data
 def load_data():
-    orders = pd.read_csv("data/orders.csv", parse_dates=["Order Date"])
-    products = pd.read_csv("data/products.csv")
-    reps = pd.read_csv("data/sales_reps.csv")
+    orders = pd.read_csv(BASE_DIR / "data" / "orders.csv", parse_dates=["Order Date"])
+    products = pd.read_csv(BASE_DIR / "data" / "products.csv")
+    reps = pd.read_csv(BASE_DIR / "data" / "sales_reps.csv")
 
     # Join the three tables into one analysis table
     df = (orders

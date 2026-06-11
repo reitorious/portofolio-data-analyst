@@ -12,9 +12,8 @@ category contribution, and sales by region.
 pip install -r requirements.txt
 streamlit run dashboard.py
 
-## Key Insights
-- Electronics accounts for ~45% of revenue.
-- Sales dipped in March → a seasonal promo is needed.
-
 ## Live Demo
-[Open dashboard](https://link-streamlit-kamu.streamlit.app)
+[Open dashboard project-01 xlx](https://xlx-sales.streamlit.app/)
+[Open dashboard project-02 sql](https://sql-food-delivery.streamlit.app/)
+[Open dashboard project-03 data cleaning](https://data-cleaning-air.streamlit.app/)
+
